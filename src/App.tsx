@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Travel Agency</h1>
+    <div className="">
+      <Homepage />
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.Navbar {
+  display: grid;
+  margin: 10px 9.722%;
+  // padding: 10px 19.44%;
+  grid-template-columns: 1fr 2fr;
+  color: var(--TopHeadingFontColor);
+  font-family: var(--NavbarFontFamily);
+  font-size: var(--NavbarFontSize);
+  font-weight: var(--NavbarFontWeight);
+
+  &__MenuItem {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0 2%;
+    }
+  }
+}
