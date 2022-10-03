@@ -1,3 +1,14 @@
+:root {
+  --CardTitleFontFamily: "Open Sans";
+  --CardTitleFontSize: 20px;
+  --CardTitleFontWeight: 600;
+  --CardTitleFontStyle: "normal";
+  --CardTitleFontColor: #1e1d4c;
+  --CardTitleLineHeight: 27px;
+  --CardDetailsFontColor: #5e6282;
+  --CardDetailsLineHeight: 26px;
+  --CardTextAlign: "center";
+}
 .Category {
   &__SectionTopHeading {
     margin: 0;
@@ -18,5 +29,40 @@
     color: var(--SectionHeadingFontColor);
     line-height: var(--SectionHeadingLineHeight);
     text-align: center;
+    margin-bottom: 108px;
+  }
+  &__Services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 14px;
+  }
+  &__Card {
+    // margin-top: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    height: 229px;
+
+    &__Title {
+      font-family: var(--CardTitleFontFamily);
+      font-size: var(--CardTitleFontSize);
+      font-weight: var(--CardTitleFontWeight);
+      font-style: var(--CardTitleFontStyle);
+      color: var(--CardTitleFontColor);
+      line-height: var(--CardTitleLineHeight);
+      text-align: var(--CardTextAlign);
+    }
+
+    &__Description {
+      font-family: var(--CardDetailsFontFamily);
+      font-size: var(--CardDetailsFontSize);
+      font-weight: var(--CardDetailsFontWeight);
+      font-style: var(--CardDetailsFontStyle);
+      color: var(--CardDetailsFontColor);
+      line-height: var(--CardDetailsLineHeight);
+      text-align: var(--CardTextAlign);
+    }
   }
 }

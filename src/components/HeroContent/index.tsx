@@ -26,10 +26,10 @@ const HeroContent = () => {
           <button className="HeroContent__LeftSide__ButtonGroup__FindButton">
             Find out more
           </button>
-          <button className="HeroContent__LeftSide__ButtonGroup__PlayDemoButton">
+          <div className="HeroContent__LeftSide__ButtonGroup__PlayDemoButton">
             <img src={playButton} alt="Play Button" />
             Play Demo
-          </button>
+          </div>
         </div>
       </div>
       <div className="HeroContent__RightSide">
