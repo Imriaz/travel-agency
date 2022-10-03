@@ -1,0 +1,80 @@
+:root {
+  --TaglineFontColor: #df6951;
+  --HeadingFontColor: #181e4b;
+  --DescriptionFontColor: #5e6282;
+  --FindButtonBackground: #f1a501;
+  --PlayDemoButtonBackground: #df6951;
+}
+
+.HeroContent {
+  margin-left: 10px;
+  margin-bottom: 97px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.HeroContent__LeftSide {
+  margin-top: 130px;
+}
+.HeroContent__LeftSide__Tagline {
+  font-family: var(--PoppinsFontFamily);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--TaglineFontColor);
+  text-transform: uppercase;
+}
+.HeroContent__LeftSide__Heading {
+  margin: 0;
+  margin-top: 24px;
+  font-family: var(--VolkhovFontFamily);
+  color: var(--HeadingFontColor);
+  font-size: 5.25rem;
+  font-style: normal;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+.HeroContent__LeftSide__Heading__Underline {
+  background: url("../../Assets/images/Underline.png");
+  background-repeat: no-repeat;
+}
+.HeroContent__LeftSide__Description {
+  margin: 30px 0 34px 0;
+  font-family: var(--PoppinsFontFamily);
+  font-weight: 500;
+  font-size: var(--TextFontSize);
+  color: var(--DescriptionFontColor);
+  line-height: 30px;
+}
+.HeroContent__LeftSide__ButtonGroup {
+  display: flex;
+  gap: 44px;
+}
+.HeroContent__LeftSide__ButtonGroup__FindButton {
+  background: var(--FindButtonBackground);
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  color: white;
+  font-family: var(--OpenSansFontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  width: 170px;
+  height: 60px;
+}
+.HeroContent__LeftSide__ButtonGroup__PlayDemoButton {
+  border: none;
+  display: flex;
+  gap: 21px;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 52px;
+}
+.HeroContent__RightSide__Banner {
+  position: absolute;
+  right: 5.86%;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */

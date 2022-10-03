@@ -3,10 +3,24 @@
   --NavbarFontWeight: 400;
   --NavbarFontSize: 17px;
   --TextFontSize: 16px;
-  --TopHeadingFontSize: 50px;
-  --TopHeadingFontWeight: 700;
-  --TopHeadingFontColor: #14183e;
+  --SectionTopHeadingFontFamily: "Poppins";
+  --SectionTopHeadingFontSize: 18px;
+  --SectionTopHeadingFontWeight: 600;
+  --SectionTopHeadingFontColor: #5e6282;
+  --SectionTopHeadingLineHeight: 27px;
+  --SectionHeadingFontFamily: "Volkhov";
+  --SectionHeadingFontSize: 50px;
+  --SectionHeadingFontWeight: 700;
+  --SectionHeadingFontColor: #14183e;
+  --SectionHeadingLineHeight: 64px;
   --CardDetailsFontFamily: "Poppins";
   --CardDetailsFontSize: 16px;
   --CardDetailsFontWeight: 500;
+  --PoppinsFontFamily: "Poppins";
+  --OpenSansFontFamily: "Open Sans";
+  --VolkhovFontFamily: "Volkhov";
+}
+
+.Homepage__Wrapper {
+  padding: 0 9.722%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Logo from "../../../Assets/images/Logo.png";
+import downArrow from "../../../Assets/images/down arrow.png";
 
 const Navbar = () => {
   return (
@@ -16,8 +17,10 @@ const Navbar = () => {
           <li>Bookings</li>
           <li>Bookings</li>
           <li>Login</li>
-          <li>Sign up</li>
-          <li>EN</li>
+          <li className="Navbar__MenuItem__SignupButton">Sign up</li>
+          <li className="Navbar__MenuItem__Language">
+            EN {" "} <img src={downArrow} alt="Down Arrow" />
+          </li>
         </ul>
       </div>
     </div>

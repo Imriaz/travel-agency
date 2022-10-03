@@ -1,0 +1,20 @@
+.Category__SectionTopHeading {
+  margin: 0;
+  margin-top: 8px;
+  font-family: var(---SectionTopHeadingFamily);
+  font-size: var(--SectionTopHeadingFontSize);
+  font-weight: var(--SectionTopHeadingFontWeight);
+  color: var(--SectionTopHeadingFontColor);
+  line-height: var(--SectionTopHeadingLineHeight);
+  text-align: center;
+}
+.Category__SectionHeading {
+  margin: 0;
+  margin-top: 10px;
+  font-family: var(---SectionHeadingFamily);
+  font-size: var(--SectionHeadingFontSize);
+  font-weight: var(--SectionHeadingFontWeight);
+  color: var(--SectionHeadingFontColor);
+  line-height: var(--SectionHeadingLineHeight);
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

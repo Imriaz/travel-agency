@@ -1,7 +1,8 @@
 .Navbar {
   display: grid;
-  margin: 10px 9.722%;
-  grid-template-columns: 1fr 2fr;
+  padding-top: 48px;
+  margin-bottom: 18px;
+  grid-template-columns: 1fr 2.5fr;
   color: var(--TopHeadingFontColor);
   font-family: var(--NavbarFontFamily);
   font-size: var(--NavbarFontSize);
@@ -9,10 +10,23 @@
 }
 .Navbar__MenuItem ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 .Navbar__MenuItem li {
   margin: 0 2%;
+}
+.Navbar__MenuItem__SignupButton {
+  border: 1px solid #212832;
+  border-radius: 5px;
+  max-width: 102px;
+  padding: 9px 2.78%;
+}
+.Navbar__MenuItem__Language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
