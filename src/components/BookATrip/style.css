@@ -1,0 +1,8 @@
+.Booking {
+  margin-top: 186px;
+  padding-left: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 118px;
+       column-gap: 118px;
+}/*# sourceMappingURL=style.css.map */
