@@ -1,0 +1,91 @@
+@use "../../Assets/SCSS/style.scss" as HeadingStyle;
+
+:root {
+  --CardTitleFontFamily: "Poppins";
+  --CardTitleFontSize: 18px;
+  --CardTitleFontWeight: 500;
+  --CardTitleFontStyle: "normal";
+  --CardTitleFontColor: #5e6282;
+  --CardTitleLineHeight: 124.5%;
+}
+.Destinations {
+  &__SectionTopHeading {
+    @include HeadingStyle.SectionTopHeading;
+    margin-top: 123px;
+  }
+
+  &__SectionHeading {
+    @include HeadingStyle.SectionHeading;
+    margin-top: 8px;
+  }
+
+  &__Services {
+    margin-top: 60px;
+    padding-left: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // gap: 36px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 314px;
+    height: 457px;
+
+    &__Image {
+      position: absolute;
+      top: 0;
+      margin: 0;
+      height: 427px;
+      width: 314px;
+      // border-radius: 24px 24px 0 0;
+      // z-index: -1;
+    }
+
+    &__Body {
+      width: 315px;
+      height: 130px;
+      position: absolute;
+        bottom: 0;
+    //   margin-top: 327px;
+      border-radius: 0px 0px 24px 24px;
+      background-color: white;
+      &__Main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px 0 20px;
+
+        &__Title {
+          margin: 0;
+          margin-top: 27px;
+          font-family: var(--CardTitleFontFamily);
+          font-size: var(--CardTitleFontSize);
+          font-weight: var(--CardTitleFontWeight);
+          font-style: var(--CardTitleFontStyle);
+          color: var(--CardTitleFontColor);
+          line-height: var(--CardTitleLineHeight);
+        }
+      }
+      &__Duration {
+        display: flex;
+        gap: 15.88px;
+        margin: 0;
+        margin-top: 19px;
+        padding-left: 21.87px;
+        padding-bottom: 42px;
+        font-family: var(--CardTitleFontFamily);
+        font-size: 16px;
+        font-weight: var(--CardTitleFontWeight);
+        font-style: var(--CardTitleFontStyle);
+        color: var(--CardTitleFontColor);
+        line-height: var(--CardTitleLineHeight);
+      }
+    }
+  }
+}

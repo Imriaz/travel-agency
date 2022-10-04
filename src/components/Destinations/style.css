@@ -1,0 +1,94 @@
+:root {
+  --CardTitleFontFamily: "Poppins";
+  --CardTitleFontSize: 18px;
+  --CardTitleFontWeight: 500;
+  --CardTitleFontStyle: "normal";
+  --CardTitleFontColor: #5e6282;
+  --CardTitleLineHeight: 124.5%;
+}
+
+.Destinations__SectionTopHeading {
+  margin: 0;
+  font-family: var(---SectionTopHeadingFamily);
+  font-size: var(--SectionTopHeadingFontSize);
+  font-weight: var(--SectionTopHeadingFontWeight);
+  color: var(--SectionTopHeadingFontColor);
+  line-height: var(--SectionTopHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+  margin-top: 123px;
+}
+.Destinations__SectionHeading {
+  margin: 0;
+  font-family: var(---SectionHeadingFamily);
+  font-size: var(--SectionHeadingFontSize);
+  font-weight: var(--SectionHeadingFontWeight);
+  color: var(--SectionHeadingFontColor);
+  line-height: var(--SectionHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+.Destinations__Services {
+  margin-top: 60px;
+  padding-left: 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.Destinations__Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 314px;
+  height: 457px;
+}
+.Destinations__Card__Image {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  height: 427px;
+  width: 314px;
+}
+.Destinations__Card__Body {
+  width: 315px;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0px 0px 24px 24px;
+  background-color: white;
+}
+.Destinations__Card__Body__Main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 0 20px;
+}
+.Destinations__Card__Body__Main__Title {
+  margin: 0;
+  margin-top: 27px;
+  font-family: var(--CardTitleFontFamily);
+  font-size: var(--CardTitleFontSize);
+  font-weight: var(--CardTitleFontWeight);
+  font-style: var(--CardTitleFontStyle);
+  color: var(--CardTitleFontColor);
+  line-height: var(--CardTitleLineHeight);
+}
+.Destinations__Card__Body__Duration {
+  display: flex;
+  gap: 15.88px;
+  margin: 0;
+  margin-top: 19px;
+  padding-left: 21.87px;
+  padding-bottom: 42px;
+  font-family: var(--CardTitleFontFamily);
+  font-size: 16px;
+  font-weight: var(--CardTitleFontWeight);
+  font-style: var(--CardTitleFontStyle);
+  color: var(--CardTitleFontColor);
+  line-height: var(--CardTitleLineHeight);
+}/*# sourceMappingURL=style.css.map */

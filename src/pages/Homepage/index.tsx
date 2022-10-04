@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Common/Navbar";
-import HeroContent from "../../components/HeroContent";
 import "./style.css";
 import Banner from "../../Assets/images/Banner Background.png";
+import Navbar from "../../components/Common/Navbar";
+import HeroContent from "../../components/HeroContent";
 import Category from "../../components/Category";
+import Destinations from "../../components/Destinations";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Navbar />
       <HeroContent />
       <Category />
+      <Destinations />
     </div>
   );
 };

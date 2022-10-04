@@ -47,6 +47,7 @@
   font-size: var(--TextFontSize);
   color: var(--DescriptionFontColor);
   line-height: 30px;
+  width: 477px;
 }
 .HeroContent__LeftSide__ButtonGroup {
   display: flex;

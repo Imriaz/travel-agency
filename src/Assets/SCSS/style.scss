@@ -1,0 +1,22 @@
+@mixin SectionTopHeading {
+  margin: 0;
+  font-family: var(---SectionTopHeadingFamily);
+  font-size: var(--SectionTopHeadingFontSize);
+  font-weight: var(--SectionTopHeadingFontWeight);
+  color: var(--SectionTopHeadingFontColor);
+  line-height: var(--SectionTopHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+}
+
+@mixin SectionHeading {
+  margin: 0;
+  font-family: var(---SectionHeadingFamily);
+  font-size: var(--SectionHeadingFontSize);
+  font-weight: var(--SectionHeadingFontWeight);
+  color: var(--SectionHeadingFontColor);
+  line-height: var(--SectionHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+  text-transform: capitalize;
+}
