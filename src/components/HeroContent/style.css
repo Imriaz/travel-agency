@@ -35,9 +35,10 @@
   font-weight: 700;
 }
 .HeroContent__LeftSide__Heading__Underline {
-  background: url("../../Assets/images/Underline.png");
-  background-repeat: no-repeat;
-  background-position-y: 86%;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: -250px;
+  z-index: -1;
 }
 .HeroContent__LeftSide__Description {
   margin: 30px 0 34px 0;

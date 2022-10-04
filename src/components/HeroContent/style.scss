@@ -32,9 +32,13 @@
       letter-spacing: -0.04em;
       font-weight: 700;
       &__Underline {
-        background: url("../../Assets/images/Underline.png");
-        background-repeat: no-repeat;
-        background-position-y: 86%;
+        // background: url("../../Assets/images/Underline.png");
+        // background-repeat: no-repeat;
+        // background-position-y: 86%;
+        position: absolute;
+        margin-top: 12px;
+        margin-left: -250px;
+        z-index: -1;
       }
     }
     &__Description {

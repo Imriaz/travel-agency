@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Traveller from "../../Assets/images/Banner Image.png";
 import playButton from "../../Assets/images/Play button.png";
+import Underline from "../../Assets/images/Underline.png";
 
 const HeroContent = () => {
   return (
@@ -11,10 +12,10 @@ const HeroContent = () => {
           Best Destinations around the world
         </h3>
         <h1 className="HeroContent__LeftSide__Heading">
-          Travel,{" "}
+          Travel, enjoy
           <span className="HeroContent__LeftSide__Heading__Underline">
-            enjoy{" "}
-          </span>
+            <img src={Underline} alt="Underline" />{" "}
+          </span>{" "}
           and live a new and full life
         </h1>
         <p className="HeroContent__LeftSide__Description">

@@ -24,4 +24,11 @@
 
 .Homepage__Wrapper {
   padding: 0 9.722%;
+}
+
+.Homepage__Banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

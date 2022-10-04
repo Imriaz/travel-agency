@@ -8,9 +8,8 @@ import Category from "../../components/Category";
 const Homepage = () => {
   return (
     <div className="Homepage__Wrapper">
-      {/* <div>
-        <img src={Banner} alt="Homepage Banner" />
-      </div> */}
+      <img className="Homepage__Banner" src={Banner} alt="Homepage Banner" />
+
       <Navbar />
       <HeroContent />
       <Category />
