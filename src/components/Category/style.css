@@ -16,20 +16,19 @@
   z-index: -1;
 }
 .Category__SectionTopHeading {
-  margin-top: 8px;
   margin: 0;
-  font-family: var(---SectionTopHeadingFamily);
+  font-family: var(---SectionTopHeadingFontFamily);
   font-size: var(--SectionTopHeadingFontSize);
   font-weight: var(--SectionTopHeadingFontWeight);
   color: var(--SectionTopHeadingFontColor);
   line-height: var(--SectionTopHeadingLineHeight);
   text-align: center;
   font-style: normal;
+  margin-top: 8px;
 }
 .Category__SectionHeading {
-  margin-top: 10px;
   margin: 0;
-  font-family: var(---SectionHeadingFamily);
+  font-family: "Volkhov";
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);
@@ -37,6 +36,7 @@
   text-align: center;
   font-style: normal;
   text-transform: capitalize;
+  margin-top: 10px;
 }
 .Category__Services {
   margin-top: 68px;

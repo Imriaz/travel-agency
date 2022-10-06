@@ -18,12 +18,12 @@
     z-index: -1;
   }
   &__SectionTopHeading {
-    margin-top: 8px;
     @include HeadingStyle.SectionTopHeading;
+    margin-top: 8px;
   }
   &__SectionHeading {
-    margin-top: 10px;
     @include HeadingStyle.SectionHeading;
+    margin-top: 10px;
   }
   &__Services {
     margin-top: 68px;

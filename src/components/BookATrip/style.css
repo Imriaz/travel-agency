@@ -1,10 +1,17 @@
+:root {
+  --FeatureCardFontFamily: "Poppins";
+  --FeatureCardFontSize: 16px;
+  --FeatureCardFontStyle: "normal";
+  --FeatureCardFontColor: #5e6282;
+  --FeatureCardLineHeight: 124.5%;
+  --TripCardFontWeight: 500;
+}
+
 .Booking {
   margin-top: 186px;
   padding-left: 46px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 118px;
-       column-gap: 118px;
 }
 .Booking__LeftSide__SectionTopHeading {
   margin: 0;
@@ -19,7 +26,7 @@
 }
 .Booking__LeftSide__SectionHeading {
   margin: 0;
-  font-family: var(---SectionHeadingFontFamily);
+  font-family: "Volkhov";
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);
@@ -29,7 +36,6 @@
   text-transform: capitalize;
   text-align: start;
   margin-top: 15px;
-  text-transform: capitalize;
 }
 .Booking__LeftSide__Feature {
   margin-top: 31px;
@@ -46,4 +52,62 @@
 }
 .Booking__LeftSide__Feature__Card__Body__Title {
   margin: 0;
+  font-family: var(--FeatureCardFontFamily);
+  font-size: var(--FeatureCardFontSize);
+  font-style: var(--FeatureCardFontStyle);
+  color: var(--FeatureCardFontColor);
+  line-height: var(--FeatureCardLineHeight);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.Booking__LeftSide__Feature__Card__Body__Description {
+  margin: 0;
+  font-family: var(--FeatureCardFontFamily);
+  font-size: var(--FeatureCardFontSize);
+  font-style: var(--FeatureCardFontStyle);
+  color: var(--FeatureCardFontColor);
+  line-height: var(--FeatureCardLineHeight);
+  font-weight: 400;
+}
+.Booking__RightSide__TripCard {
+  margin: 78px 115px 14px 118px;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 400px;
+  border-radius: 24px;
+  border: 1px solid red;
+  background-color: aqua;
+}
+.Booking__RightSide__TripCard__Body {
+  padding: 26px 0 31px 25px;
+}
+.Booking__RightSide__TripCard__Body__Title {
+  font-family: var(--FeatureCardFontFamily);
+  font-style: var(--FeatureCardFontStyle);
+  font-weight: var(--TripCardFontWeight);
+  line-height: var(--FeatureCardLineHeight);
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  color: #080809;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.Booking__RightSide__TripCard__Body__Description {
+  display: flex;
+  font-family: var(--FeatureCardFontFamily);
+  font-style: var(--FeatureCardFontStyle);
+  font-weight: var(--TripCardFontWeight);
+  line-height: var(--FeatureCardLineHeight);
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  color: #84829a;
+  margin-bottom: 21px;
+}
+.Booking__RightSide__TripCard__Body__Icon {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr;
+  gap: 15px;
+  padding-left: 3px;
+  margin-top: 21px;
 }/*# sourceMappingURL=style.css.map */

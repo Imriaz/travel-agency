@@ -20,7 +20,7 @@
 }
 .Destinations__SectionHeading {
   margin: 0;
-  font-family: var(---SectionHeadingFontFamily);
+  font-family: "Volkhov";
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);

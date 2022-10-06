@@ -11,7 +11,7 @@
 
 @mixin SectionHeading {
   margin: 0;
-  font-family: var(---SectionHeadingFontFamily);
+  font-family: "Volkhov";
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);
@@ -19,4 +19,13 @@
   text-align: center;
   font-style: normal;
   text-transform: capitalize;
+}
+
+@mixin FeatureCard {
+  margin: 0;
+  font-family: var(--FeatureCardFontFamily);
+  font-size: var(--FeatureCardFontSize);
+  font-style: var(--FeatureCardFontStyle);
+  color: var(--FeatureCardFontColor);
+  line-height: var(--FeatureCardLineHeight);
 }

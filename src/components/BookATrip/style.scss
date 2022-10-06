@@ -1,11 +1,20 @@
 @use "../../Assets/SCSS/style.scss" as HeadingStyle;
 
+:root {
+  --FeatureCardFontFamily: "Poppins";
+  --FeatureCardFontSize: 16px;
+  --FeatureCardFontStyle: "normal";
+  --FeatureCardFontColor: #5e6282;
+  --FeatureCardLineHeight: 124.5%;
+  --TripCardFontWeight: 500;
+}
+
 .Booking {
   margin-top: 186px;
   padding-left: 46px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 118px;
+  //   column-gap: 118px;
 
   &__LeftSide {
     &__SectionTopHeading {
@@ -16,7 +25,6 @@
       @include HeadingStyle.SectionHeading;
       text-align: start;
       margin-top: 15px;
-      text-transform: capitalize;
     }
     &__Feature {
       margin-top: 31px;
@@ -36,10 +44,62 @@
         margin-bottom: 48px;
 
         &__Body {
-            &__Title {
-                margin: 0;
-                
-            }
+          &__Title {
+            @include HeadingStyle.FeatureCard;
+            font-weight: 700;
+            margin-bottom: 4px;
+          }
+          &__Description {
+            @include HeadingStyle.FeatureCard;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  &__RightSide {
+    &__TripCard {
+      margin: 78px 115px 14px 118px;
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      height: 400px;
+      border-radius: 24px;
+      border: 1px solid red;
+      background-color: aqua;
+
+      &__Body {
+        padding: 26px 0 31px 25px;
+        &__Title {
+          font-family: var(--FeatureCardFontFamily);
+          font-style: var(--FeatureCardFontStyle);
+          font-weight: var(--TripCardFontWeight);
+          line-height: var(--FeatureCardLineHeight);
+          font-size: 18px;
+          letter-spacing: 0.015em;
+          color: #080809;
+          margin: 0;
+          margin-bottom: 13px;
+        }
+        &__Description {
+          display: flex;
+          font-family: var(--FeatureCardFontFamily);
+          font-style: var(--FeatureCardFontStyle);
+          font-weight: var(--TripCardFontWeight);
+          line-height: var(--FeatureCardLineHeight);
+          font-size: 16px;
+          letter-spacing: -0.005em;
+          color: #84829a;
+          //   margin: 0;
+          margin-bottom: 21px;
+        }
+        &__Icon {
+          display: grid;
+          grid-template-columns: 0.1fr 0.1fr 0.1fr;
+          gap: 15px;
+          padding-left: 3px;
+          margin-top: 21px;
         }
       }
     }
