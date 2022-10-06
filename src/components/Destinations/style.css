@@ -31,15 +31,13 @@
   margin-top: 8px;
 }
 .Destinations__Services {
+  position: relative;
   margin-top: 60px;
   padding-left: 33px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background: url("../../Assets/images/Destination spring.png");
-  background-repeat: no-repeat;
-  background-position: right 75%;
 }
 .Destinations__Card {
   position: relative;
@@ -95,4 +93,10 @@
   font-style: var(--CardTitleFontStyle);
   color: var(--CardTitleFontColor);
   line-height: var(--CardTitleLineHeight);
+}
+.Destinations__Background {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 35%;
 }/*# sourceMappingURL=style.css.map */

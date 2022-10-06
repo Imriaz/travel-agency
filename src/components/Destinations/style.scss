@@ -20,16 +20,16 @@
   }
 
   &__Services {
+    position: relative;
     margin-top: 60px;
     padding-left: 33px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // gap: 36px;
     justify-content: center;
     align-items: center;
-    background: url("../../Assets/images/Destination\ spring.png");
-    background-repeat: no-repeat;
-    background-position: right 75%;
+    // background: url("../../Assets/images/Destination\ spring.png");
+    // background-repeat: no-repeat;
+    // background-position: right 75%;
   }
   &__Card {
     position: relative;
@@ -95,5 +95,11 @@
         line-height: var(--CardTitleLineHeight);
       }
     }
+  }
+  &__Background {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 35%;
   }
 }

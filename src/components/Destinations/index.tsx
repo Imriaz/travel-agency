@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import TopDestination from "../../Assets/images/Top Destination.png";
 import ShareIcon from "../../Assets/images/share icon.png";
+import SpringBackground from "../../Assets/images/Destination spring.png";
 
 const Destinations = () => {
   return (
@@ -74,6 +75,11 @@ const Destinations = () => {
             </p>
           </div>
         </div>
+        <img
+          className="Destinations__Background"
+          src={SpringBackground}
+          alt="Spring Background"
+        />
       </div>
     </div>
   );
