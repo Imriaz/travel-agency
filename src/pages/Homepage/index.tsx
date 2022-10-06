@@ -7,6 +7,7 @@ import Category from "../../components/Category";
 import Destinations from "../../components/Destinations";
 import BookATrip from "../../components/BookATrip";
 import Partners from "../../components/Partners";
+import Subscribe from "../../components/Subscribe";
 
 const Homepage = () => {
   return (
@@ -19,6 +20,7 @@ const Homepage = () => {
       <Destinations />
       <BookATrip />
       <Partners />
+      <Subscribe />
     </div>
   );
 };
