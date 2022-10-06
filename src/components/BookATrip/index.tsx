@@ -7,6 +7,8 @@ import TripCartImage from "../../Assets/images/Trip cart image.jpg";
 import Leaf from "../../Assets/images/Leaf.png";
 import Map from "../../Assets/images/map icon.png";
 import Send from "../../Assets/images/send.png";
+import Building from "../../Assets/images/building 1.png";
+import Heart from "../../Assets/images/heart icon.png";
 
 const BookATrip = () => {
   return (
@@ -57,7 +59,10 @@ const BookATrip = () => {
       </div>
       <div className="Booking__RightSide">
         <div className="Booking__RightSide__TripCard">
-          <img src={TripCartImage} alt="Trip Card Images" />
+          <img
+            src={TripCartImage}
+            alt="Trip Card Images"
+          />
           <div className="Booking__RightSide__TripCard__Body">
             <h1 className="Booking__RightSide__TripCard__Body__Title">
               Trip To Greece
@@ -70,6 +75,11 @@ const BookATrip = () => {
               <img src={Leaf} alt="Leaf Icon" />
               <img src={Map} alt="Map Icon" />
               <img src={Send} alt="Send Icon" />
+            </div>
+            <div className="Booking__RightSide__TripCard__Body__Interest">
+              <img src={Building} alt="Building Icon" />
+              <span>24 people going</span>
+              <img src={Heart} alt="Heart Icon" />
             </div>
           </div>
         </div>
