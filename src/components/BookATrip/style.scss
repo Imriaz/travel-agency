@@ -1,7 +1,47 @@
+@use "../../Assets/SCSS/style.scss" as HeadingStyle;
+
 .Booking {
-    margin-top: 186px;
-    padding-left: 46px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 118px;
+  margin-top: 186px;
+  padding-left: 46px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 118px;
+
+  &__LeftSide {
+    &__SectionTopHeading {
+      @include HeadingStyle.SectionTopHeading;
+      text-align: start;
+    }
+    &__SectionHeading {
+      @include HeadingStyle.SectionHeading;
+      text-align: start;
+      margin-top: 15px;
+      text-transform: capitalize;
+    }
+    &__Feature {
+      margin-top: 31px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //   align-items: center;
+
+      &__Card {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        // gap: 21px;
+        // gap: 1.458%;
+        gap: 4.22%;
+        justify-content: center;
+        // align-items: center;
+        margin-bottom: 48px;
+
+        &__Body {
+            &__Title {
+                margin: 0;
+                
+            }
+        }
+      }
+    }
+  }
 }

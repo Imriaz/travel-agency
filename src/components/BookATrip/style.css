@@ -5,4 +5,45 @@
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 118px;
        column-gap: 118px;
+}
+.Booking__LeftSide__SectionTopHeading {
+  margin: 0;
+  font-family: var(---SectionTopHeadingFontFamily);
+  font-size: var(--SectionTopHeadingFontSize);
+  font-weight: var(--SectionTopHeadingFontWeight);
+  color: var(--SectionTopHeadingFontColor);
+  line-height: var(--SectionTopHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+  text-align: start;
+}
+.Booking__LeftSide__SectionHeading {
+  margin: 0;
+  font-family: var(---SectionHeadingFontFamily);
+  font-size: var(--SectionHeadingFontSize);
+  font-weight: var(--SectionHeadingFontWeight);
+  color: var(--SectionHeadingFontColor);
+  line-height: var(--SectionHeadingLineHeight);
+  text-align: center;
+  font-style: normal;
+  text-transform: capitalize;
+  text-align: start;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.Booking__LeftSide__Feature {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Booking__LeftSide__Feature__Card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4.22%;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.Booking__LeftSide__Feature__Card__Body__Title {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

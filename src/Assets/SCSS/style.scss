@@ -1,6 +1,6 @@
 @mixin SectionTopHeading {
   margin: 0;
-  font-family: var(---SectionTopHeadingFamily);
+  font-family: var(---SectionTopHeadingFontFamily);
   font-size: var(--SectionTopHeadingFontSize);
   font-weight: var(--SectionTopHeadingFontWeight);
   color: var(--SectionTopHeadingFontColor);
@@ -11,7 +11,7 @@
 
 @mixin SectionHeading {
   margin: 0;
-  font-family: var(---SectionHeadingFamily);
+  font-family: var(---SectionHeadingFontFamily);
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);

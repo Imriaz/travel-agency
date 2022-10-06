@@ -9,7 +9,7 @@
 
 .Destinations__SectionTopHeading {
   margin: 0;
-  font-family: var(---SectionTopHeadingFamily);
+  font-family: var(---SectionTopHeadingFontFamily);
   font-size: var(--SectionTopHeadingFontSize);
   font-weight: var(--SectionTopHeadingFontWeight);
   color: var(--SectionTopHeadingFontColor);
@@ -20,7 +20,7 @@
 }
 .Destinations__SectionHeading {
   margin: 0;
-  font-family: var(---SectionHeadingFamily);
+  font-family: var(---SectionHeadingFontFamily);
   font-size: var(--SectionHeadingFontSize);
   font-weight: var(--SectionHeadingFontWeight);
   color: var(--SectionHeadingFontColor);
