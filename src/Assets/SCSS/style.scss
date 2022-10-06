@@ -29,3 +29,18 @@
   color: var(--FeatureCardFontColor);
   line-height: var(--FeatureCardLineHeight);
 }
+
+@mixin TripCard {
+  font-family: var(--FeatureCardFontFamily);
+  font-style: var(--FeatureCardFontStyle);
+  font-weight: var(--TripCardFontWeight);
+  line-height: var(--FeatureCardLineHeight);
+}
+
+@mixin HoverCard {
+  margin: 0;
+  font-family: var(--FeatureCardFontFamily);
+  font-style: var(--FeatureCardFontStyle);
+  font-weight: var(--TripCardFontWeight);
+  line-height: var(--FeatureCardLineHeight);
+}

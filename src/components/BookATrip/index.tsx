@@ -9,6 +9,8 @@ import Map from "../../Assets/images/map icon.png";
 import Send from "../../Assets/images/send.png";
 import Building from "../../Assets/images/building 1.png";
 import Heart from "../../Assets/images/heart icon.png";
+import HoverCardImage from "../../Assets/images/Hover Card.png";
+import ProgressBar from "../../Assets/images/Progress Bar.png";
 
 const BookATrip = () => {
   return (
@@ -58,31 +60,43 @@ const BookATrip = () => {
         </div>
       </div>
       <div className="Booking__RightSide">
-          <div className="Booking__RightSide__TripCard">
-            <img src={TripCartImage} alt="Trip Card Images" />
-            <div className="Booking__RightSide__TripCard__Body">
-              <h1 className="Booking__RightSide__TripCard__Body__Title">
-                Trip To Greece
-              </h1>
-              <div className="Booking__RightSide__TripCard__Body__Description">
-                <span>14-29 June | </span>
-                <span>by Robbin joseph</span>
-              </div>
-              <div className="Booking__RightSide__TripCard__Body__Icon">
-                <img src={Leaf} alt="Leaf Icon" />
-                <img src={Map} alt="Map Icon" />
-                <img src={Send} alt="Send Icon" />
-              </div>
-              <div className="Booking__RightSide__TripCard__Body__Interest">
-                <img src={Building} alt="Building Icon" />
-                <span>24 people going</span>
-                <img src={Heart} alt="Heart Icon" />
-              </div>
+        <div className="Booking__RightSide__TripCard">
+          <img src={TripCartImage} alt="Trip Card Images" />
+          <div className="Booking__RightSide__TripCard__Body">
+            <h1 className="Booking__RightSide__TripCard__Body__Title">
+              Trip To Greece
+            </h1>
+            <div className="Booking__RightSide__TripCard__Body__Description">
+              <span>14-29 June | </span>
+              <span>by Robbin joseph</span>
+            </div>
+            <div className="Booking__RightSide__TripCard__Body__Icon">
+              <img src={Leaf} alt="Leaf Icon" />
+              <img src={Map} alt="Map Icon" />
+              <img src={Send} alt="Send Icon" />
+            </div>
+            <div className="Booking__RightSide__TripCard__Body__Interest">
+              <img src={Building} alt="Building Icon" />
+              <span>24 people going</span>
+              <img src={Heart} alt="Heart Icon" />
             </div>
           </div>
+        </div>
       </div>
       <div className="Booking__RightSide__HoverCard">
-
+        <img src={HoverCardImage} alt="Hover Card Icon" />
+        <div className="Booking__RightSide__HoverCard__Body">
+          <h3 className="Booking__RightSide__HoverCard__Body__Title">
+            Ongoing
+          </h3>
+          <p className="Booking__RightSide__HoverCard__Body__Description">
+            Trip to rome
+          </p>
+          <p className="Booking__RightSide__HoverCard__Body__Progress">
+            40% <span style={{ color: "#14183E" }}>completed</span>
+          </p>
+          <img src={ProgressBar} alt="Progress Bar Icon" />
+        </div>
       </div>
     </div>
   );
