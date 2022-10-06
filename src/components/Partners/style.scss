@@ -1,8 +1,13 @@
 .Partner {
   margin-top: 96px;
   padding: 0 41px 0 46px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  &__Logo {
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
 }
