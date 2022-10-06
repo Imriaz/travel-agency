@@ -58,31 +58,31 @@ const BookATrip = () => {
         </div>
       </div>
       <div className="Booking__RightSide">
-        <div className="Booking__RightSide__TripCard">
-          <img
-            src={TripCartImage}
-            alt="Trip Card Images"
-          />
-          <div className="Booking__RightSide__TripCard__Body">
-            <h1 className="Booking__RightSide__TripCard__Body__Title">
-              Trip To Greece
-            </h1>
-            <div className="Booking__RightSide__TripCard__Body__Description">
-              <span>14-29 June | </span>
-              <span>by Robbin joseph</span>
-            </div>
-            <div className="Booking__RightSide__TripCard__Body__Icon">
-              <img src={Leaf} alt="Leaf Icon" />
-              <img src={Map} alt="Map Icon" />
-              <img src={Send} alt="Send Icon" />
-            </div>
-            <div className="Booking__RightSide__TripCard__Body__Interest">
-              <img src={Building} alt="Building Icon" />
-              <span>24 people going</span>
-              <img src={Heart} alt="Heart Icon" />
+          <div className="Booking__RightSide__TripCard">
+            <img src={TripCartImage} alt="Trip Card Images" />
+            <div className="Booking__RightSide__TripCard__Body">
+              <h1 className="Booking__RightSide__TripCard__Body__Title">
+                Trip To Greece
+              </h1>
+              <div className="Booking__RightSide__TripCard__Body__Description">
+                <span>14-29 June | </span>
+                <span>by Robbin joseph</span>
+              </div>
+              <div className="Booking__RightSide__TripCard__Body__Icon">
+                <img src={Leaf} alt="Leaf Icon" />
+                <img src={Map} alt="Map Icon" />
+                <img src={Send} alt="Send Icon" />
+              </div>
+              <div className="Booking__RightSide__TripCard__Body__Interest">
+                <img src={Building} alt="Building Icon" />
+                <span>24 people going</span>
+                <img src={Heart} alt="Heart Icon" />
+              </div>
             </div>
           </div>
-        </div>
+      </div>
+      <div className="Booking__RightSide__HoverCard">
+
       </div>
     </div>
   );
