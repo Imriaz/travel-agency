@@ -1,12 +1,41 @@
 .Subscribe {
+  position: relative;
   margin-top: 158px;
   width: 1170px;
   height: 407px;
-  background: #dfd7f9;
-  border-radius: 20px 129px 20px 20px;
+  background: rgba(223, 215, 249, 0.2);
+  border-radius: 129px 20px 20px 20px;
+  z-index: 1;
+}
+.Subscribe__LeftIcon {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: -1;
+}
+.Subscribe__RightIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Subscribe__ShareIcon {
+  position: absolute;
+  top: -5%;
+  right: -1.5%;
+}
+.Subscribe__PlusIcon {
+  position: absolute;
+  bottom: -15%;
+  right: -10%;
+  z-index: -1;
+}
+.Subscribe__MailIcon {
+  position: absolute;
+  left: 15%;
 }
 .Subscribe__Description {
   padding: 78px 155px;
+  z-index: 1;
 }
 .Subscribe__Description__Title {
   margin: 0;
@@ -15,11 +44,11 @@
   font-weight: 600;
   font-size: 33px;
   line-height: 164%;
-  /* or 164% */
   text-align: center;
   color: #5e6282;
 }
 .Subscribe__Description__Area {
+  position: relative;
   margin: 0;
   margin-top: 74px;
   display: flex;
@@ -28,22 +57,19 @@
   gap: 24px;
 }
 .Subscribe__Description__Area__InputField {
+  margin: 0;
   width: 421px;
   height: 68px;
   background: #ffffff;
   border-radius: 10px;
-  background-image: url("../../Assets/images/Mail.png");
-  background-repeat: no-repeat;
-  background-size: 31px;
-  border: 1px solid #39425d;
-  position: left;
-  padding-left: 31px;
+  border: none;
 }
 .Subscribe__Description__Area__Button {
   margin: 0;
   width: 180px;
   height: 68px;
   background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border: none;
   border-radius: 10px;
   padding: 22px 50px;
   font-family: var(--OpenSansFontFamily);

@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>Login</li>
           <li className="Navbar__MenuItem__SignupButton">Sign up</li>
           <li className="Navbar__MenuItem__Language">
-            EN {" "} <img src={downArrow} alt="Down Arrow" />
+            EN <img src={downArrow} alt="Down Arrow" />
           </li>
         </ul>
       </div>
