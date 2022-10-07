@@ -1,9 +1,32 @@
 @use "../../../Assets/SCSS/style.scss" as FooterStyle;
 
+@mixin NavContentTitle {
+  margin: 0;
+  font-family: var(--PoppinsFontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124.5%;
+  color: #080809;
+  margin-bottom: 34px;
+}
+
+@mixin NavContentElement {
+  margin: 0;
+  font-family: var(--PoppinsFontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color: #5e6282;
+  margin-bottom: 13px;
+}
+
 .Footer {
   margin-top: 166px;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  gap: 83px;
 
   &__Logo {
     &__Title {
@@ -23,24 +46,76 @@
   }
 
   &__NavContent {
-    display: flex;
+    // display: flex;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    // gap: 72px;
+
+    &__NavRow {
+      &__Title {
+        @include NavContentTitle;
+      }
+      & p {
+        @include NavContentElement;
+      }
+    }
   }
 
   &__Outbound {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
 
     &__Social {
+      height: 45px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+      margin-bottom: 26px;
+      & img {
+        height: 45px;
+        width: 45px;
+      }
       & img:hover {
         cursor: pointer;
       }
     }
     &__Discover {
+      &__Title {
+        margin: 0;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 124.5%;
+        letter-spacing: 0.005em;
+        color: #5e6282;
+        margin-bottom: 16px;
+      }
+      &__Logo {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 7px;
+      }
       & img:hover {
         cursor: pointer;
       }
     }
+  }
+
+  &__Copyright {
+    margin: 0;
+    margin-top: 84px;
+    margin-bottom: 79px;
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 124.5%;
+    color: #5e6282;
   }
 }
