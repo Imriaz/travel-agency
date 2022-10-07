@@ -8,6 +8,7 @@ import Destinations from "../../components/Destinations";
 import BookATrip from "../../components/BookATrip";
 import Partners from "../../components/Partners";
 import Subscribe from "../../components/Subscribe";
+import Footer from "../../components/Common/Footer";
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
       <BookATrip />
       <Partners />
       <Subscribe />
+      <Footer />
     </div>
   );
 };

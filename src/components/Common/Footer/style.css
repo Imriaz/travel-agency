@@ -1,0 +1,41 @@
+.Footer {
+  margin-top: 166px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.Footer__Logo__Title {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 66px;
+  color: #181e4b;
+  margin-bottom: 19px;
+}
+.Footer__Logo__Description {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+.Footer__NavContent {
+  display: flex;
+}
+.Footer__Outbound {
+  display: flex;
+  flex-direction: column;
+}
+.Footer__Outbound__Social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Footer__Outbound__Social img:hover {
+  cursor: pointer;
+}
+.Footer__Outbound__Discover img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

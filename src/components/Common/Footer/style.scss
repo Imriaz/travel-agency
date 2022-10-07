@@ -1,0 +1,46 @@
+@use "../../../Assets/SCSS/style.scss" as FooterStyle;
+
+.Footer {
+  margin-top: 166px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  &__Logo {
+    &__Title {
+      @include FooterStyle.FooterLogo;
+      font-size: 44px;
+      line-height: 66px;
+      color: #181e4b;
+      margin-bottom: 19px;
+    }
+
+    &__Description {
+      @include FooterStyle.FooterLogo;
+      font-size: 13px;
+      line-height: 124.5%;
+      color: #5e6282;
+    }
+  }
+
+  &__NavContent {
+    display: flex;
+  }
+
+  &__Outbound {
+    display: flex;
+    flex-direction: column;
+
+    &__Social {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      & img:hover {
+        cursor: pointer;
+      }
+    }
+    &__Discover {
+      & img:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
