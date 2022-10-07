@@ -1,11 +1,56 @@
-.Subscribe__Title {
+.Subscribe {
+  margin-top: 158px;
+  width: 1170px;
+  height: 407px;
+  background: #dfd7f9;
+  border-radius: 20px 129px 20px 20px;
+}
+.Subscribe__Description {
+  padding: 78px 155px;
+}
+.Subscribe__Description__Title {
+  margin: 0;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 33px;
-  line-height: 54px;
+  line-height: 164%;
   /* or 164% */
   text-align: center;
-  /* TEXT CLR */
   color: #5e6282;
+}
+.Subscribe__Description__Area {
+  margin: 0;
+  margin-top: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.Subscribe__Description__Area__InputField {
+  width: 421px;
+  height: 68px;
+  background: #ffffff;
+  border-radius: 10px;
+  background-image: url("../../Assets/images/Mail.png");
+  background-repeat: no-repeat;
+  background-size: 31px;
+  border: 1px solid #39425d;
+  position: left;
+  padding-left: 31px;
+}
+.Subscribe__Description__Area__Button {
+  margin: 0;
+  width: 180px;
+  height: 68px;
+  background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  border-radius: 10px;
+  padding: 22px 50px;
+  font-family: var(--OpenSansFontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

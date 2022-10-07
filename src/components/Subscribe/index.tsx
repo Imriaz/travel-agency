@@ -5,13 +5,21 @@ import MailIcon from "../../Assets/images/Mail.png";
 const Subscribe = () => {
   return (
     <div className="Subscribe">
-      <h1 className="Subscribe__Title">
-        Subscribe to get information, latest news and other interesting offers
-        about Cobham
-      </h1>
-      <div className="Subscribe__Button">
-        <input type="text" placeholder="Your email" />
-        <button>Subscribe</button>
+      <div className="Subscribe__Description">
+        <h1 className="Subscribe__Description__Title">
+          Subscribe to get information, latest news and other interesting offers
+          about Cobham
+        </h1>
+        <div className="Subscribe__Description__Area">
+          <input
+            className="Subscribe__Description__Area__InputField"
+            type="text"
+            placeholder="Your email"
+          />
+          <button className="Subscribe__Description__Area__Button">
+            Subscribe
+          </button>
+        </div>
       </div>
     </div>
   );
