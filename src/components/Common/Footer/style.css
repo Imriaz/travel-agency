@@ -24,7 +24,7 @@
   color: #5e6282;
 }
 .Footer__NavContent {
-  padding-top: 10px;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
@@ -51,7 +51,7 @@
   margin-bottom: 13px;
 }
 .Footer__Outbound {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
 }

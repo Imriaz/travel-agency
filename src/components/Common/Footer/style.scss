@@ -47,7 +47,7 @@
 
   &__NavContent {
     // display: flex;
-    padding-top: 10px;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -65,7 +65,7 @@
   }
 
   &__Outbound {
-    padding-top: 10px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
 
