@@ -76,7 +76,7 @@ const Destinations = () => {
           </div>
         </div>
         <img
-          className="Destinations__Background"
+          className="Destinations__Services__Background"
           src={SpringBackground}
           alt="Spring Background"
         />

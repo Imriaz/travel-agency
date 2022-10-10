@@ -39,6 +39,12 @@
   justify-content: center;
   align-items: center;
 }
+.Destinations__Services__Background {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  top: 35%;
+}
 .Destinations__Card {
   position: relative;
   display: flex;
@@ -93,10 +99,4 @@
   font-style: var(--CardTitleFontStyle);
   color: var(--CardTitleFontColor);
   line-height: var(--CardTitleLineHeight);
-}
-.Destinations__Background {
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  top: 35%;
 }/*# sourceMappingURL=style.css.map */

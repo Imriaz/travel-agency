@@ -31,6 +31,45 @@
   text-transform: capitalize;
   text-align: start;
   margin-top: 8px;
+  position: relative;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+@-webkit-keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 .Testimonials__LeftSide__ToggleButton {
   margin-top: 82px;
@@ -47,9 +86,6 @@
   cursor: pointer;
 }
 .Testimonials__LeftSide__ToggleButton__Button.active {
-  background: #39425d;
-}
-.Testimonials__LeftSide__ToggleButton__Button:active {
   background: #39425d;
 }
 .Testimonials__RightSide {

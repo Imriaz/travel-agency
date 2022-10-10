@@ -117,7 +117,7 @@
 .Booking__RightSide__HoverCard {
   position: absolute;
   top: 52%;
-  right: 3%;
+  right: 0.3%;
   display: grid;
   gap: 12px;
   grid-template-columns: 0.3fr 2fr;
