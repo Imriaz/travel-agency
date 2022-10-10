@@ -1,0 +1,12 @@
+import React from "react";
+
+const Testimonials = () => {
+  return (
+    <div>
+      <h1>Hello Testimonials</h1>
+      mt200 mb138
+    </div>
+  );
+};
+
+export default Testimonials;

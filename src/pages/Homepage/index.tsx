@@ -6,6 +6,7 @@ import HeroContent from "../../components/HeroContent";
 import Category from "../../components/Category";
 import Destinations from "../../components/Destinations";
 import BookATrip from "../../components/BookATrip";
+import Testimonials from "../../components/Testimonials";
 import Partners from "../../components/Partners";
 import Subscribe from "../../components/Subscribe";
 import Footer from "../../components/Common/Footer";
@@ -20,6 +21,7 @@ const Homepage = () => {
       <Category />
       <Destinations />
       <BookATrip />
+      <Testimonials />
       <Partners />
       <Subscribe />
       <Footer />
