@@ -1,0 +1,172 @@
+@use "../../Assets/SCSS/style.scss" as HeadingStyle;
+
+@mixin CardTitle {
+  margin: 0;
+  font-family: (--PoppinsFontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5e6282;
+  margin-top: 34px;
+}
+
+@mixin CardDescription {
+  margin: 0;
+  font-family: (--PoppinsFontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  // line-height: 32px;
+  line-height: 200%;
+  color: #5e6282;
+}
+
+@mixin CardAddress {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 5px;
+  color: #5e6282;
+}
+
+.Testimonials {
+  margin-top: 200px;
+  padding-left: 46px;
+  padding-right: -51px;
+  margin-bottom: 138px;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  //   gap: 124px;
+
+  &__LeftSide {
+    &__SectionTopHeading {
+      @include HeadingStyle.SectionTopHeading;
+      margin-top: 9px;
+      text-align: start;
+      text-transform: uppercase;
+    }
+    &__SectionHeading {
+      @include HeadingStyle.SectionHeading;
+      text-align: start;
+      margin-top: 8px;
+    }
+    &__ToggleButton {
+      margin-top: 82px;
+      display: flex;
+      gap: 26px;
+      margin-bottom: 88px;
+      &__Button {
+        border: none;
+        width: 12px;
+        height: 12px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.active {
+          background: #39425d;
+        }
+        &:active {
+          background: #39425d;
+        }
+      }
+    }
+  }
+
+  &__RightSide {
+    position: relative;
+
+    &__Card {
+      width: 504px;
+      height: 245px;
+
+      background: #ffffff;
+      box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+        0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+        0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+        0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+      border-radius: 10px;
+
+      &__Body {
+        padding: 28px 68px 34px 34px;
+
+        &__Title {
+          @include CardTitle;
+        }
+        &__Description {
+          @include CardDescription;
+        }
+        &__Address {
+          @include CardAddress;
+        }
+      }
+      &__CardIcon {
+        position: absolute;
+        top: -15%;
+        left: -5%;
+      }
+    }
+
+    &__SlideButtons {
+      position: absolute;
+      right: 0;
+      bottom: 35%;
+      cursor: pointer;
+
+      //   transform: translateY(-50%);
+      //   z-index: 100;
+      z-index: 1;
+
+      & button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        height: 7px;
+        margin: 57.5px 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      & button svg {
+        // fill: green;
+        // stroke: red !important;
+      }
+      & button.Testimonials__RightSide__SlideButtons__Next {
+        // transform: scaleY(-1);
+        // border: 2px solid #3e2e4d;
+        // transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+      & button.Testimonials__RightSide__SlideButtons__Previous:active {
+        transform: translateY(8px);
+      }
+      & button.Testimonials__RightSide__SlideButtons__Next:active {
+        transform: scaleY(-1) translateY(8px);
+      }
+    }
+  }
+}
+
+.Second {
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  z-index: -1;
+  border: 2px solid #f7f7f7;
+  //   filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+  //     drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+  //     drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+  //     drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+  //     drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+  //     drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  border-radius: 10px;
+}
+
+// .Testimonials__RightSide__SlideButtons__Previous {
+//   stroke: red !important;
+// }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Logo from "../../../Assets/images/Logo.png";
-import downArrow from "../../../Assets/images/down arrow.png";
+import downArrow from "../../../Assets/images/down arrow.svg";
 
 const Navbar = () => {
   return (
