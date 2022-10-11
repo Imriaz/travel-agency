@@ -36,40 +36,7 @@
           animation-name: example;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-}
-@-webkit-keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
-@keyframes example {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
+  margin-bottom: 82px;
 }
 .Testimonials__LeftSide__ToggleButton {
   margin-top: 82px;
@@ -165,4 +132,19 @@
   z-index: -1;
   border: 2px solid #f7f7f7;
   border-radius: 10px;
+}
+
+.slick-dots {
+  text-align: start !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  opacity: 1 !important;
+  color: #e5e5e5 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #39425d !important;
 }/*# sourceMappingURL=style.css.map */

@@ -1,42 +1,21 @@
 import React from "react";
 import "./style.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import CardImage from "../../Assets/images/Testimonials card image.png";
 
 const Testimonials = () => {
-  const [sectionHeadingValue, setSectionHeadingValue] = React.useState(1);
   let slideIndex = 1;
-  const [previewSlides, setPreviewSlides] = React.useState<string[]>([]);
+  const [previewSlides, setPreviewSlides] = React.useState<string[]>(["block"]);
 
-  //   const plusSlides(n:number) => {
-  // setShowSlides(showSlides= showSlides+n);
-  //   }
-
-  function currentSlide(n: number) {
-    showSlides((slideIndex = n));
-  }
-
-  const showSlides = (n: number) => {
-    let i;
-    let slides = document.getElementsByClassName(
-      "Testimonials__LeftSide__SectionHeading"
-    );
-    let dots = document.getElementsByClassName(
-      "Testimonials__LeftSide__ToggleButton__Button"
-    );
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -45,7 +24,29 @@ const Testimonials = () => {
         <h1 className="Testimonials__LeftSide__SectionTopHeading">
           Testimonials
         </h1>
-        <h2 className="Testimonials__LeftSide__SectionHeading">
+        <div style={{ margin: "0", height: "320px", width: "495px" }}>
+          <Slider {...settings}>
+            <div>
+              <h2 className="Testimonials__LeftSide__SectionHeading">
+                What people say about Us.
+              </h2>
+            </div>
+            <div>
+              <h2 className="Testimonials__LeftSide__SectionHeading">
+                What people say about Us 2.
+              </h2>
+            </div>
+            <div>
+              <h2 className="Testimonials__LeftSide__SectionHeading">
+                What people say about Us 3.
+              </h2>
+            </div>
+          </Slider>
+        </div>
+        {/* <h2
+          className="Testimonials__LeftSide__SectionHeading"
+          style={{ display: `${previewSlides}` }}
+        >
           What people say about Us.
         </h2>
         <h2 className="Testimonials__LeftSide__SectionHeading">
@@ -53,8 +54,9 @@ const Testimonials = () => {
         </h2>
         <h2 className="Testimonials__LeftSide__SectionHeading">
           What people say about Us 3.
-        </h2>
-        <div className="Testimonials__LeftSide__ToggleButton">
+        </h2> */}
+
+        {/* <div className="Testimonials__LeftSide__ToggleButton">
           <button
             className="Testimonials__LeftSide__ToggleButton__Button active"
             onClick={() => currentSlide(1)}
@@ -67,7 +69,7 @@ const Testimonials = () => {
             className="Testimonials__LeftSide__ToggleButton__Button"
             onClick={() => currentSlide(3)}
           ></button>
-        </div>
+        </div> */}
       </div>
       <div className="Testimonials__RightSide">
         <div className="Testimonials__RightSide__Card">

@@ -56,24 +56,25 @@
       position: relative;
       animation-name: example;
       animation-duration: 4s;
+      margin-bottom: 82px;
 
-      @keyframes example {
-        0% {
-          background-color: red;
-          left: 0px;
-          top: 0px;
-        }
-        25% {
-          background-color: yellow;
-          left: 200px;
-          top: 0px;
-        }
-        100% {
-          background-color: red;
-          left: 0px;
-          top: 0px;
-        }
-      }
+      //   @keyframes example {
+      //     0% {
+      //       background-color: red;
+      //       left: 0px;
+      //       top: 0px;
+      //     }
+      //     25% {
+      //       background-color: yellow;
+      //       left: 200px;
+      //       top: 0px;
+      //     }
+      //     100% {
+      //       background-color: red;
+      //       left: 0px;
+      //       top: 0px;
+      //     }
+      //   }
     }
 
     &__ToggleButton {
@@ -185,6 +186,19 @@
   //     drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
   //     drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
   border-radius: 10px;
+}
+
+.slick-dots {
+  text-align: start !important;
+}
+.slick-dots li button:before {
+  font-size: 12px !important;
+  opacity: 1 !important;
+  color: #e5e5e5 !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #39425d !important;
 }
 
 // .Testimonials__RightSide__SlideButtons__Previous {
